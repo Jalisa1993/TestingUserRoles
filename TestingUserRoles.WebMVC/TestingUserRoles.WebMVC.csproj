@@ -180,7 +180,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -257,6 +256,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestingUser.Data\TestingUserRoles.Data.csproj">
+      <Project>{0aad9eff-9285-48a2-acd8-00b49fee523c}</Project>
+      <Name>TestingUserRoles.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingUser.Models\TestingUserRoles.Models.csproj">
+      <Project>{8550a83a-4732-4f92-b4d7-e30fc0e4f5b9}</Project>
+      <Name>TestingUserRoles.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingUser.Services\TestingUserRoles.Services.csproj">
+      <Project>{ec1b2fd0-405a-4b8a-a6e3-224b91cf00a4}</Project>
+      <Name>TestingUserRoles.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
